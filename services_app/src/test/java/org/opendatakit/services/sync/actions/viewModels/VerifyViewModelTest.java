@@ -20,13 +20,15 @@ public class VerifyViewModelTest {
     public void setUp() throws Exception {
         verifyViewModel = new VerifyViewModel();
     }
+
     @Test
-    public void checkVerifyActions(){
-      verifyViewModel.updateVerifyAction(VerifyServerSettingsActions.VERIFY);
-      assertEquals(VerifyServerSettingsActions.VERIFY, verifyViewModel.getCurrentAction());
+    public void checkVerifyActions() {
+        verifyViewModel.updateVerifyAction(VerifyServerSettingsActions.VERIFY);
+        assertEquals(VerifyServerSettingsActions.VERIFY, verifyViewModel.getCurrentAction());
     }
+
     @Test
-    public void checkVerifyType(){
+    public void checkVerifyType() {
         String verifyType = "verified";
         verifyViewModel.setVerifyType(verifyType);
         assertEquals(verifyType, verifyViewModel.getVerifyType());
