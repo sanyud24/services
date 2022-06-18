@@ -14,6 +14,7 @@ import org.robolectric.annotation.Config;
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {Build.VERSION_CODES.O_MR1})
 public class VerifyViewModelTest {
+
     private VerifyViewModel verifyViewModel;
 
     @Before
